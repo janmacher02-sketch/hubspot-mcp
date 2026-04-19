@@ -1,0 +1,37 @@
+name: hubspot-mcp
+displayName: HubSpot CRM
+description: |
+  HubSpot CRM tools for AI assistants. Search and manage contacts, deals, companies,
+  pipelines, engagements, and owners. Perfect for sales reps and RevOps teams.
+version: 1.0.0
+license: MIT
+categories:
+  - crm
+  - sales
+  - business
+tags:
+  - hubspot
+  - crm
+  - sales
+  - deals
+  - contacts
+  - pipeline
+  - revops
+startCommand:
+  type: http
+  configSchema:
+    type: object
+    properties:
+      hubspotApiKey:
+        type: string
+        title: HubSpot API Key
+        description: "Private app access token from HubSpot Settings → Integrations → Private Apps"
+      apiKey:
+        type: string
+        title: API Key (Optional)
+        description: "Remove the 10 calls/day limit."
+    required:
+      - hubspotApiKey
+  exampleConfig:
+    hubspotApiKey: "pat-na1-xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
+    apiKey: "km_your_key_here"
