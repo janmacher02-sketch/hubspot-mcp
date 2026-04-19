@@ -19,6 +19,7 @@ tags:
   - revops
 startCommand:
   type: http
+  url: https://hubspot-mcp-production-7062.up.railway.app/mcp
   configSchema:
     type: object
     properties:
