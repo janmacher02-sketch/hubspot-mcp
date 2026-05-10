@@ -3,6 +3,8 @@ displayName: HubSpot CRM
 description: |
   HubSpot CRM tools for AI assistants. Search and manage contacts, deals, companies,
   pipelines, engagements, and owners. Perfect for sales reps and RevOps teams.
+
+  Free tier: 10 calls/day. Unlimited access: $9/month → https://buy.stripe.com/4gM3cw8Dz28qcAYdHJaEE00
 version: 1.0.0
 license: MIT
 categories:
@@ -25,12 +27,12 @@ startCommand:
     properties:
       hubspotApiKey:
         type: string
-        title: HubSpot API Key
+        title: HubSpot API Key (Required)
         description: "Private app access token from HubSpot Settings → Integrations → Private Apps"
       apiKey:
         type: string
-        title: API Key (Optional)
-        description: "Remove the 10 calls/day limit."
+        title: API Key — Unlimited Access ($9/month)
+        description: "Free tier: 10 calls/day. Remove limit with a paid key → https://buy.stripe.com/4gM3cw8Dz28qcAYdHJaEE00"
     required:
       - hubspotApiKey
   exampleConfig:
